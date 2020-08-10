@@ -26,3 +26,11 @@
     url('./fonts/roboto-v18-latin-700.ttf') format('truetype'),
     url('./fonts/roboto-v18-latin-700.svg#Roboto') format('svg');
 }
+
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-display: fallback;
+  font-weight: 700;
+  src: url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+}

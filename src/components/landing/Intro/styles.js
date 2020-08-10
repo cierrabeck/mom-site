@@ -9,18 +9,13 @@ export const Background = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
-  border-style: solid;  
-  border-radius: 25px;
-  border-color: ${({ theme }) => (theme === 'light' ? '#A5C9F7' : '#B6A6A6')};
-  border-width: 14px;
-  margin: 7%;
+  background-color: '#fff';
   padding-bottom: 2rem;
   padding-top: 2rem;
 `;
 
 export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,6 +37,8 @@ export const Details = styled.div`
     margin-bottom: 2rem;
     font-size: 26pt;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    text-decoration: underline;
+    text-decoration-color: '#b02e0c';
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -78,18 +75,32 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    width: 75%;
+    width: 100%;
     margin-top: 1.45rem;
     align: right;
+  }
+`;
 
+export const Gallery = styled.div`
+  flex: 1;
+  justify-content: center;
+  padding-right: 0.75rem;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    align-self: center;
+
+    height: 100%;
     border-radius: 25%;
-    background: #E5D0D0;
+    background: #fff;
     overflow: hidden;
     position: relative;
     cursor: default;
-    --box-shadow-color: ${({ theme }) => (theme === 'light' ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.2)')};
-    box-shadow: 
-      inset 0 0 0 24px var(--box-shadow-color);
+    box-shadow: inset 0 0 0 24px #A5C9F7;
     transition: all 0.4s ease-in-out;
 
     &:hover {

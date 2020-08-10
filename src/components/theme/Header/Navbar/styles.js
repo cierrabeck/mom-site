@@ -8,19 +8,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
-  --fill-color: #E5D0D0;
-  font: 700 4rem Raleway, sans-serif;
+  font: 900 2rem Raleway, sans-serif;
+  color: #000;
+  padding: 1rem;
+  border: 4px solid #a5c9f7;
+  border-radius: 25px;
   text-decoration: none;
-  text-transform: uppercase;
-  --border-color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
-	-webkit-text-stroke: 2px var(--border-color);
-	background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
-  color: transparent;
-  -webkit-background-clip: text;
-	background-clip: text;
-	transition: 0.5s linear;
 
-	&:hover {
-	  background-size: 100%;
+  &:hover {
+	  background-color: #a5c9f7;
 	}
 `;

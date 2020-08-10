@@ -4,7 +4,10 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header, Footer } from 'components/theme';
 import { Container, Button } from 'components/common';
 import image from 'assets/illustrations/image.png';
-import { Wrapper, Background, IntroWrapper, Details, Thumbnail} from './styles';
+import school_1 from 'assets/illustrations/school_1.png'
+import school_2 from 'assets/illustrations/school_2.png'
+import school_3 from 'assets/illustrations/school_3.png'
+import { Wrapper, Background, IntroWrapper, Details, Thumbnail, Gallery} from './styles';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
@@ -22,6 +25,17 @@ export const Intro = () => {
           <img src={image} align='right' alt="Cierra" />
         </Thumbnail>
       </IntroWrapper>
+      <IntroWrapper as={Container}>
+      <Gallery>
+          <img src={school_1} align='center' alt="1" />
+        </Gallery>
+        <Gallery>
+          <img src={school_2} align='center' alt="2" />
+        </Gallery>
+        <Gallery>
+          <img src={school_3} align='center' alt="3" />
+        </Gallery>
+        </IntroWrapper>
       <Footer />
     </Wrapper>
   </Background>
