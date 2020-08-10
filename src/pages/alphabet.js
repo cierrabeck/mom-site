@@ -1,10 +1,9 @@
 import React from 'react';
 import { Layout, SEO } from 'components/common';
-import { Gallery } from 'components/art';
+import { Alphabet } from 'components/games';
 
 export default () => (
   <Layout>
-    <SEO />
-    <Gallery />
+    <Alphabet />
   </Layout>
 );

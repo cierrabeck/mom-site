@@ -8,9 +8,8 @@ const NavbarLinks = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <Wrapper desktop={'desktop'} theme={theme}>
-      <Link to="/art" href="#about">art</Link>
-      {/* <Link to="/projects" href="#projects">tech</Link> */}
-      <ToggleTheme />
+      <Link to="/alphabet" href="#about"> Alphabet Letter Cards</Link>
+      {/* <ToggleTheme /> */}
     </Wrapper>
   )
 };

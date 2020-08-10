@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
   border-style: solid;  
   border-radius: 25px;
-  border-color: ${({ theme }) => (theme === 'light' ? '#F4EDEC' : '#B6A6A6')};
+  border-color: ${({ theme }) => (theme === 'light' ? '#A5C9F7' : '#B6A6A6')};
   border-width: 14px;
   margin: 7%;
   padding-bottom: 2rem;
