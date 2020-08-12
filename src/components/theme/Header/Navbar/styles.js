@@ -4,18 +4,25 @@ export const Wrapper = styled.div`
   padding: 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const Brand = styled.a`
-  font: 900 2rem Raleway, sans-serif;
-  color: #000;
-  padding: 1rem;
-  border: 4px solid #a5c9f7;
-  border-radius: 25px;
-  text-decoration: none;
+--fill-color: #A5C9F7;
+font: 900 3rem Raleway, sans-serif;
+text-decoration: none;
+--border-color: #000000;
+-webkit-text-stroke: 2px var(--border-color);	
+background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+transition: 0.5s linear;
 
-  &:hover {
-	  background-color: #a5c9f7;
-	}
+position: relative;
+display: block;
+
+&:hover {
+  background-size: 100%;
+}
 `;

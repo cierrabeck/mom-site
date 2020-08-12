@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-Personal Site source code
+Mrs Beck Classroom source code
 
 Developed with React and Gatbsy
 
